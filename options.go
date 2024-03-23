@@ -4,11 +4,11 @@
 package wal
 
 import (
+	"github.com/dreamsxin/wal/fs"
+	"github.com/dreamsxin/wal/metadb"
+	"github.com/dreamsxin/wal/segment"
+	"github.com/dreamsxin/wal/types"
 	"github.com/go-kit/log"
-	"github.com/polarsignals/wal/fs"
-	"github.com/polarsignals/wal/metadb"
-	"github.com/polarsignals/wal/segment"
-	"github.com/polarsignals/wal/types"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

@@ -6,17 +6,18 @@ package wal
 import (
 	"errors"
 	"fmt"
-	"github.com/go-kit/log/level"
-	"github.com/prometheus/client_golang/prometheus"
 	"io"
 	"os"
 	"sync"
 	"sync/atomic"
 	"time"
 
+	"github.com/go-kit/log/level"
+	"github.com/prometheus/client_golang/prometheus"
+
 	"github.com/benbjohnson/immutable"
+	"github.com/dreamsxin/wal/types"
 	"github.com/go-kit/log"
-	"github.com/polarsignals/wal/types"
 )
 
 var (

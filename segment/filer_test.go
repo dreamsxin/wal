@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 	"github.com/stretchr/testify/require"
 )
 

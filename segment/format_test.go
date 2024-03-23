@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/dreamsxin/wal/types"
 	fuzz "github.com/google/gofuzz"
-	"github.com/polarsignals/wal/types"
 	"github.com/stretchr/testify/require"
 )
 

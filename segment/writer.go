@@ -9,7 +9,7 @@ import (
 	"io"
 	"sync/atomic"
 
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 )
 
 // Writer allows appending logs to a segment file as well as reading them back.

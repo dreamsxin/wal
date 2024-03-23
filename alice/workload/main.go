@@ -7,12 +7,13 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"github.com/polarsignals/wal"
-	"github.com/polarsignals/wal/types"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/dreamsxin/wal"
+	"github.com/dreamsxin/wal/types"
 )
 
 type opts struct {

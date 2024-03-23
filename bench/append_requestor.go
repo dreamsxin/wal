@@ -7,15 +7,16 @@ import (
 	"context"
 	"crypto/rand"
 	"fmt"
-	"github.com/polarsignals/wal/types"
 	"io"
 	"sync/atomic"
 	"time"
 
+	"github.com/dreamsxin/wal/types"
+
 	"github.com/HdrHistogram/hdrhistogram-go"
 	"github.com/benmathews/bench"
 	histwriter "github.com/benmathews/hdrhistogram-writer"
-	"github.com/polarsignals/wal"
+	"github.com/dreamsxin/wal"
 )
 
 var (

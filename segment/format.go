@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 )
 
 const (

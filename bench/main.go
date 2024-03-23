@@ -16,7 +16,7 @@ import (
 
 	"github.com/HdrHistogram/hdrhistogram-go"
 	"github.com/benmathews/bench"
-	"github.com/polarsignals/wal/metadb"
+	"github.com/dreamsxin/wal/metadb"
 )
 
 type opts struct {

@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 
 	"github.com/benbjohnson/immutable"
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 )
 
 // state is an immutable snapshot of the state of the log. Modifications must be

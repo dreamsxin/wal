@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 )
 
 // Reader allows reading logs from a segment file.

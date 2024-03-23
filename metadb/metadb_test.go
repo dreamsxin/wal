@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 	"github.com/stretchr/testify/require"
 )
 

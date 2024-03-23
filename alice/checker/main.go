@@ -8,13 +8,14 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"github.com/polarsignals/wal/types"
 	"log"
 	"os"
 	"regexp"
 	"strconv"
 
-	"github.com/polarsignals/wal"
+	"github.com/dreamsxin/wal/types"
+
+	"github.com/dreamsxin/wal"
 )
 
 func main() {

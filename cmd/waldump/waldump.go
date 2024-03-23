@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/polarsignals/wal/fs"
-	"github.com/polarsignals/wal/segment"
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/fs"
+	"github.com/dreamsxin/wal/segment"
+	"github.com/dreamsxin/wal/types"
 )
 
 type opts struct {

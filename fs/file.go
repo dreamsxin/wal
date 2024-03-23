@@ -7,7 +7,7 @@ import (
 	"os"
 	"sync/atomic"
 
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 )
 
 var _ types.WritableFile = &File{}

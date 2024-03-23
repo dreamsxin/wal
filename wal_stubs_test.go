@@ -16,7 +16,7 @@ import (
 	"time"
 
 	"github.com/benbjohnson/immutable"
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 	"github.com/stretchr/testify/require"
 )
 

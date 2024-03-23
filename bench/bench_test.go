@@ -5,14 +5,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/polarsignals/wal/types"
 	"os"
 	"path/filepath"
 	"testing"
 	"time"
 
+	"github.com/dreamsxin/wal/types"
+
 	"github.com/coreos/etcd/pkg/fileutil"
-	"github.com/polarsignals/wal"
+	"github.com/dreamsxin/wal"
 	"github.com/stretchr/testify/require"
 )
 

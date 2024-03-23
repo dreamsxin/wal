@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/polarsignals/wal/types"
+	"github.com/dreamsxin/wal/types"
 	"go.etcd.io/bbolt"
 )
 

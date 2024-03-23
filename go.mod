@@ -1,4 +1,4 @@
-module github.com/polarsignals/wal
+module github.com/dreamsxin/wal
 
 go 1.20
 
