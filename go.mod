@@ -12,7 +12,7 @@ require (
 	github.com/google/gofuzz v1.2.0
 	github.com/prometheus/client_golang v1.15.0
 	github.com/stretchr/testify v1.8.2
-	go.etcd.io/bbolt v1.3.6
+	go.etcd.io/bbolt v1.3.9
 )
 
 require (
