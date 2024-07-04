@@ -1,5 +1,5 @@
-//go:build !windows
-// +build !windows
+//go:build windows
+// +build windows
 
 // Copyright (c) HashiCorp, Inc
 // SPDX-License-Identifier: MPL-2.0
@@ -8,7 +8,6 @@ package fs
 
 import (
 	"os"
-	"sync/atomic"
 
 	"github.com/polarsignals/wal/types"
 )
@@ -32,12 +31,15 @@ type File struct {
 // since creation it also fsyncs the parent dir.
 func (f *File) Sync() error {
 	// Sync the underlying file
-	if err := f.File.Sync(); err != nil {
+	fileInfo, err := f.File.Stat()
+	if err != nil {
 		return err
 	}
-	new := atomic.SwapUint32(&f.new, 1)
-	if new == 0 {
-		return syncDir(f.dir)
+	if fileInfo.IsDir() {
+		return nil
+	}
+	if err := f.File.Sync(); err != nil {
+		return err
 	}
 	return nil
 }

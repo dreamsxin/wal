@@ -1,5 +1,5 @@
-//go:build !wasm && !windows
-// +build !wasm,!windows
+//go:build windows
+// +build windows
 
 // Copyright (c) HashiCorp, Inc
 // SPDX-License-Identifier: MPL-2.0
@@ -136,18 +136,7 @@ func safeInitBoltDB(dir string) error {
 		return err
 	}
 
-	// And Fsync that parent dir to make sure the new new file with it's new name
-	// is persisted!
-	dirF, err := os.Open(dir)
-	if err != nil {
-		return err
-	}
-	err = dirF.Sync()
-	closeErr := dirF.Close()
-	if err != nil {
-		return err
-	}
-	return closeErr
+	return nil
 }
 
 // Load loads the existing persisted state. If there is no existing state
